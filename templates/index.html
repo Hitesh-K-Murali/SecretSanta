@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa 🎅</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <span class="icon-santa">🎅</span>
+        <h1>Join Secret Santa</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Santa Claus">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="santa@northpole.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Mailing Address</label>
+                <textarea id="address" name="address" required rows="3"
+                    placeholder="123 Elf Road, North Pole, 88888"></textarea>
+            </div>
+
+            <button type="submit">Join the Fun! 🎁</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Secret Santa 🎅</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <span class="icon-santa">⚠️</span>
+        <h1>Oops!</h1>
+        <p class="error-message">
+            {{ error_message }}
+        </p>
+        <a href="/">
+            <button style="margin-top: 2rem;">Back to Registration</button>
+        </a>
+    </div>
+</body>
+</html>
