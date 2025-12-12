@@ -28,13 +28,13 @@ cp .env.example .env
 Edit `.env` and add your actual credentials:
 
 ```
-EMAIL_ADDRESS=your-email@zohomail.com
-EMAIL_PASSWORD=your-zoho-app-password
+EMAIL_ADDRESS=your-email@gmail.com
+EMAIL_PASSWORD=your-gmail-app-password
 ```
 
-> **Note**: If using Zoho Mail with 2FA, you'll need to generate an app-specific password:
+> **Note**: If using GMail with 2FA, you'll need to generate an app-specific password:
 >
-> 1. Go to Zoho Mail Account Settings
+> 1. Go to GMail Account Settings
 > 2. Navigate to Security → App Passwords
 > 3. Generate a new app password
 > 4. Use that password in your `.env` file
@@ -50,7 +50,7 @@ export $(cat .env | xargs)
 Or on each run:
 
 ```bash
-export EMAIL_ADDRESS=your-email@zohomail.com
+export EMAIL_ADDRESS=your-email@gmail.com
 export EMAIL_PASSWORD=your-password
 python app.py
 ```
